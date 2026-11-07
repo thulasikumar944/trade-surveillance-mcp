@@ -28,6 +28,7 @@ steps:
       - --service-account
       - mcp-runtime-sa@$PROJECT_ID.iam.gserviceaccount.com
       - --no-allow-unauthenticated
+      - --functional-type=mcp-server
 
 images:
   - asia-south1-docker.pkg.dev/$PROJECT_ID/trade-surveillance-images/trade-surveillance-mcp:$SHORT_SHA
